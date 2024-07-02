@@ -1,6 +1,6 @@
 # Music_Player_JS
 
-# Music Player
+
 
 A simple and elegant web-based music player built with HTML, CSS, and JavaScript.
 
@@ -15,7 +15,7 @@ A simple and elegant web-based music player built with HTML, CSS, and JavaScript
 
 ## Demo
 
-[Live Demo](https://prem-kumar412.github.io/Music_Player_JS/) (Replace with actual link if available)
+[Live Demo](https://prem-kumar412.github.io/Music_Player_JS/) 
 
 
 
@@ -23,7 +23,7 @@ A simple and elegant web-based music player built with HTML, CSS, and JavaScript
 
 ### Prerequisites
 
-- A modern web browser (e.g., Chrome, Firefox, Safari)
+- A modern web browser (e.g., Chrome, Firefox, Safari,Microsoft Edge)
 
 ### Installation
 
