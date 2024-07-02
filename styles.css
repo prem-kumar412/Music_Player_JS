@@ -1,0 +1,269 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/*toggle*/
+#toggle {
+    width: 50px;
+    height: 30px;
+    background-color: #000;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+}
+
+#toggle button {
+    margin: 3px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/* Added styles for dark mode */
+.dark-mode #toggle {
+    background-color: #fff;
+}
+
+.dark-mode #toggle button {
+    background-color: #000;
+}
+
+
+
+
+
+
+/* Container styles */
+.container {
+    width: 90%;
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 18px;
+    margin: 5% auto;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Content styles */
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left and right panel styles */
+.left,
+.right {
+    width: 25%;
+    background-color: #48cae4;
+    overflow: hidden;
+    text-align: left;
+    border-radius: 3vmin;
+}
+
+.right {
+    float: right;
+}
+
+/* Left and right container styles */
+.left-container,
+.right-container {
+    padding: 5%;
+}
+
+/* Song and playlist styles */
+.all-songs,
+.playlist>h3 {
+    margin-top: 20px;
+}
+
+/* Center styles */
+.center {
+    flex: 1;
+    background-color: #48cae4;
+    height: 87%;
+    margin: 2%;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Song box styles */
+.song-box {
+    margin-top: 4%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-color: #023e8a;
+    flex-direction: column;
+    border-radius: 4%;
+    color: #caf0f8;
+}
+
+.song-box h3 {
+    margin-top: 9px;
+}
+
+.song-box p {
+    margin-top: 7px;
+}
+
+.current-playlist h3, .added-playlist h3 {
+    margin: 20px 0px 20px;
+}
+
+/* Song image styles */
+.song-img {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    margin-top: 20px;
+    background-image: url("./images/Bobby-Deol-Entrance.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Input and button styles */
+input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px;
+    background-color: #023e8a;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Button styles for songs and playlist */
+.all-songs button, .playlist button {
+    width: 70%;
+    display: block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.all-songs {
+    text-align: center;
+}
+
+button:hover {
+    background-color: #03045e;
+}
+
+/* Audio player styles */
+#audio-player {
+    width: 80%;
+    margin-top: 10%;
+}
+
+/* Styles for audio controls */
+#audio-player::-webkit-media-controls-panel {
+    background-color: #caf0f8;
+}
+
+#audio-player::-webkit-media-controls-play-button,
+#audio-player::-webkit-media-controls-pause-button {
+    color: #03045e;
+}
+
+/* Button styles for text, icons, and adding to playlist */
+.text-icon-button, .add-to-playlist-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #023e8a;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.text-icon-button {
+    margin-right: 5px;
+}
+
+.add-to-playlist-button {
+    margin-top: 20px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #253237;
+    color: #e0fbfc;
+}
+
+.dark-mode .container {
+    border-color: #9db4c0;
+}
+
+.dark-mode h1 {
+    color: black;
+}
+
+.dark-mode button {
+    background-color: #253237;
+}
+
+.dark-mode button:hover {
+    background-color: #000;
+}
+
+.dark-mode .left,
+.dark-mode .right, .dark-mode .center {
+    background-color: #5c6b73;
+}
+
+.dark-mode .song-box {
+    background-color: #9db4c0;
+    color: #253237;
+}
+
+.dark-mode .song-box h3,
+.dark-mode .song-box p {
+    color: #253237;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 80%;
+    }
+
+    .left {
+        order: 1;
+    }
+
+    .right {
+        order: 2;
+    }
+}
